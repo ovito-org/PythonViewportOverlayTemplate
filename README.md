@@ -1,9 +1,9 @@
-# Python Pipeline Source Template
+# Python Viewport Overlay Template
 
-Template for a custom Python-based pipeline source that hooks into OVITO and can easily be shared with other users.
+Template for a custom Python-based viewport overlay that hooks into OVITO and can easily be shared with other users.
 
-This repository contains a template for creating your own [Python script pipeline source](https://www.ovito.org/docs/current/reference/pipelines/data_sources/python_script.html#what-is-a-python-data-source), 
-which can be installed into *OVITO Pro* or the [`ovito`](https://pypi.org/project/ovito/) Python module using *pip*. In opposite to using file-based pipeline sources, the python script piplines source allows you to generate ad-hoc contents direclty in OVITO.
+This repository contains a template for creating your own [Python script viewport overlay](https://www.ovito.org/docs/current/reference/viewports/layers/python_script_layer.html#viewport-layers-python-script)), 
+which can be installed into *OVITO Pro* or the [`ovito`](https://pypi.org/project/ovito/) Python module using *pip*. 
 
 ## Getting Started
 
