@@ -1,4 +1,4 @@
-# [[Pipeline Source Name]]
+# [[Viewport Overlay Name]]
 [[One-line description]]
 
 ## Description

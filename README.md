@@ -2,14 +2,14 @@
 
 Template for a custom Python-based viewport overlay that hooks into OVITO and can easily be shared with other users.
 
-This repository contains a template for creating your own [Python script viewport overlay](https://www.ovito.org/docs/current/reference/viewports/layers/python_script_layer.html#viewport-layers-python-script)), 
+This repository contains a template for creating your own [Python script viewport overlay](https://www.ovito.org/docs/current/reference/viewports/layers/python_script_layer.html#viewport-layers-python-script), 
 which can be installed into *OVITO Pro* or the [`ovito`](https://pypi.org/project/ovito/) Python module using *pip*. 
 
 ## Getting Started
 
 1. Click the "Use this template" button to create your own repository based on this template.
 2. Rename `src/PackageName` to reflect the name of your viewport overlay.
-3. Implement your [custom pipeline source](https://www.ovito.org/docs/current/python/modules/ovito_pipeline.html#ovito.pipeline.PipelineSourceInterface) in [`src/PackageName/__init__.py`](src/PackageName/__init__.py). When you implement only the `create` method, just one static configuration (frame 0) will be generated. To generate a trajectory instead refer to the [`PipelineSourceInterface.compute_trajectory_length`](https://www.ovito.org/docs/current/python/modules/ovito_pipeline.html#ovito.pipeline.PipelineSourceInterface.compute_trajectory_length) method as explained in the OVITO Python docs.
+3. Implement your [custom viewport overlay](https://ovito.org/docs/dev/python/introduction/custom_overlays.html) in [`src/PackageName/__init__.py`](src/PackageName/__init__.py). 
 4. Fill in the [`pyproject.toml`](pyproject.toml) file. Fields that need to be replaced with your information are enclosed in descriptive `[[field]]` tags. Please make sure to include ovito>=3.9.2 as a dependency. Depending on your needs, you can add additional fields to the `pyproject.toml` file. Information can be found [here](https://setuptools.pypa.io/en/latest/userguide/index.html).
 5. Fill in the [`README_Template.md`](README_Template.md) file. Again, the `[[fields]]` placeholders should guide you. Feel free to add other sections like "Images", "Citation", or "References" as needed.
 6. Add meaningful examples and data sample files to the `examples` directory to help others understand the use of your viewport overlay.
@@ -17,7 +17,7 @@ which can be installed into *OVITO Pro* or the [`ovito`](https://pypi.org/projec
 8. Once you're done, rename `README_Template.md` to `README.md`, replacing this file.
 
 ## Testing
-This repository is configured to enable automated testing using the [pytest](https://docs.pytest.org/en/7.4.x/) framework. Tests are automatically executed after each push to the main branch. To set up and activate automated testing, follow these two steps:
+This repository is configured to enable automated testing using the [pytest](https://docs.pytest.org/en/) framework. Tests are automatically executed after each push to the main branch. To set up and activate automated testing, follow these two steps:
 
 1. Write your tests in the `test/test_viewport_overlay.py` file. You can also use other filenames that adhere to the pytest requirements.
 2. Open the `.github/workflows/python-tests.yml` file and remove the `if: ${{ false }}` condition on line 15.

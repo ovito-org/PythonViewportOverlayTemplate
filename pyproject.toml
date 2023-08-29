@@ -20,7 +20,7 @@ dependencies = [
 repository = "[[Repository Link]]"
 
 [project.entry-points.'OVITO.ViewportOverlay']
-"Human Readable Viewport Overlay Name" = "PackageName:render_function"
+"Human Readable Viewport Overlay Name" = "[[PackageName]]:[[ViewportOverlayName]]"
 
 [tool.setuptools.packages.find]
 where = ["src"]
